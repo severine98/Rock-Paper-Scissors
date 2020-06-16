@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js" async defer></script>
+</head>
+
+<body>
+
+    <div>
+        <section id="leftSection">
+            <article class="images">
+                <img id="rock" src="./UserRock.PNG" alt="UserRock">
+                <img id="paper" src="./UserPaper.PNG" alt="UserPaper">
+                <img id="scissors" src="./UserScissors.PNG" alt="UserScissors">
+            </article>
+
+            <article class="currentScore">
+                <h3>Your score: <span id="userPoints">0</span></h3>
+            </article>
+        </section>
+
+        <section id="score">
+            <h2>Score <button type="button" class="btn btn-light">Reset</button> </h2>
+            <h3 class="who-won">Who won this round?</h3>
+            <p id="roundWinner"></p>
+            <h3>Who is in the lead?</h3>
+            <p id="lead"></p>
+        </section>
+
+        <section id="rightSection">
+            <article class="images">
+                <p id="computer"> </p>
+                <img id="computerRock" src="./ComputerRock.PNG" alt="ComputerRock">
+                <img id="computerPaper" src="./ComputerPaper.PNG" alt="ComputerPaper">
+                <img id="computerScissors" src="./ComputerScissors.PNG" alt="ComputerScissors">
+            </article>
+
+            <article class="currentScore">
+                <h3>Computer score: <span id="computerPoints">0</span></h3>
+            </article>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

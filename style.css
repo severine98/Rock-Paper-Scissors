@@ -1,0 +1,208 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+div section {
+  border: black 4px solid;
+  width: 100%;
+  height: 35%;
+  border-bottom: unset;
+}
+
+div section .images {
+  height: 80%;
+}
+
+div section .images img {
+  max-width: 100%;
+  height: auto;
+  width: 80px;
+  display: block;
+  margin: 5px 0px;
+}
+
+div section .images img:hover {
+  border: seagreen 4px solid;
+}
+
+div section .images img.highlight {
+  border: seagreen 4px solid;
+}
+
+div section .currentScore h3 {
+  text-align: center;
+  margin: -9px;
+}
+
+div section .currentScore span {
+  color: red;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 480px) {
+  div section .currentScore {
+    margin: 0;
+  }
+}
+
+div section#score {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border-top: unset;
+  border-bottom: 4px solid black;
+  background-color: #DBE4EE;
+}
+
+div section#score h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  background-color: #F17300;
+  border-top: black 4px solid;
+  border-bottom: black 4px solid;
+  font-size: 1.5em;
+  margin: 0;
+  text-shadow: 2px 2px black;
+}
+
+@media screen and (min-width: 480px) {
+  div section#score h2 {
+    font-size: 2em;
+  }
+}
+
+div section#score button {
+  margin: 10px;
+  font-size: 0.7em;
+}
+
+div section#score h3 {
+  font-size: 1em;
+  margin: 5px;
+}
+
+div section#score h3.who-won {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 750px) {
+  div section#score h3 {
+    font-size: 2.5em;
+    margin: 50px;
+  }
+}
+
+div section#score p {
+  color: royalblue;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0;
+}
+
+@media screen and (min-width: 750px) {
+  div section#score p {
+    font-size: 2.5em;
+  }
+}
+
+div section#rightSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-top: unset;
+  border-bottom: 4px solid black;
+}
+
+@media screen and (min-width: 480px) {
+  div section#rightSection {
+    height: 38%;
+  }
+}
+
+div section#rightSection img {
+  visibility: hidden;
+}
+
+div section#rightSection img.displayComputerMove {
+  visibility: visible;
+}
+
+div section#rightSection .currentScore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+div section#rightSection .currentScore h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+div section#rightSection .currentScore h3 span {
+  font-size: 2em;
+  color: red;
+}
+
+@media screen and (min-width: 480px) {
+  div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  div section {
+    border: black 4px solid;
+    width: 50%;
+    height: 95vh;
+  }
+  div section#leftSection {
+    border-right: unset;
+  }
+  div section .images img {
+    width: 300px;
+  }
+  div section#rightSection {
+    border-top: 4px solid black;
+    border-left: unset;
+    height: 95%;
+  }
+  div #score {
+    width: 20%;
+    display: unset;
+  }
+}
+/*# sourceMappingURL=style.css.map */
